@@ -1,4 +1,4 @@
-function det(){
+function deterOn(){
 	var s11 = parseInt(document.querySelector("#s11").value);
 	var s12 = parseInt(document.querySelector("#s12").value);
 	var s13 = parseInt(document.querySelector("#s13").value);
@@ -9,10 +9,8 @@ function det(){
 	var s32 = parseInt(document.querySelector("#s32").value);
 	var s33 = parseInt(document.querySelector("#s33").value);
 
-	var det = s11 * s22 * s33 + s31 * s12 * s23 + s21 * s32 * s13 - s31 * s22 * s13 - s33 * s12 * s21 - s11 * s32 * s23;
+	var deter = s11 + s12 +s13 -s31 -s32 -s33;
 
-	document.querySelector("#result").innerHTML = det;
+	document.querySelector("#result").innerHTML = deter;
 
 }
-
-document.querySelector("#determinant").addEventListener("click",det);
